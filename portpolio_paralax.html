@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Jost:wght@500;700;800;900&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Jost', sans-serif;
+        }
+        html{
+            font-size: 62.5%;
+        }
+        section{
+            width:100%;
+            height: 100vh; 
+            display: grid;
+            place-items: center;
+            text-align: center;
+            background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),
+            url(images/box1.webp);
+            background-repeat: no-repeat;
+            /* background-size: 100% auto; */
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        .sec2{
+            background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),
+            url(images/box2.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .sec3{
+            background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),
+            url(images/box3.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .sec4{
+            background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),
+            url(images/box4.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .sec5{
+            background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),
+            url(images/box5.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .sec6{
+            background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),
+            url(images/box6.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        h2{
+            font-size: 6.4rem;
+            color: white;
+            text-shadow: 2px 2px 5px black;
+        }
+        p{
+            font-size: 2rem;
+            color: white;
+            text-shadow: 2px 2px 8px rgb(60, 58, 58);
+        }
+        .input-flex{
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+        }
+        input{
+            padding-left: 0.8em;
+            padding-top: 0.4em;
+            padding-bottom: 0.4em;
+            border-radius: 5px;
+            font-size: 1.35rem;
+        }
+        .submit-button{
+            display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        button{
+            display: block;
+            margin-top: 1.5em;
+            font-size: 1.35rem;
+            padding: 0.4em 1em;
+            border-radius: 20px;
+            transition: box-shadow 0.15s,background-color 0.15s,color 0.15s;
+        }
+        input:hover,button:hover{
+            box-shadow: 2px 2px 24px #bd2e6e;
+        }
+        button:hover{
+            cursor: pointer;
+            background-color: rgb(240, 241, 243);
+        }
+        button:active{
+            background-color: hsla(333, 61%, 46%, 0.596);
+            color: white;
+        }
+        .sec1 p{
+            text-shadow: 2px 2px 3px rgb(0, 37, 3);
+        }
+        .sec6 h2:hover{
+            text-shadow: 2px 2px 10px #bd2e6e;
+        }
+        .sec6 h2{
+            transition: text-shadow 0.15s;
+        }
+        .sec1 h2:hover{
+            text-shadow: 2px 2px 24px #094943;
+        }
+        .sec6 h2{
+            transition: text-shadow 0.15s;
+        }
+        @media (max-width:1082px){
+           html{
+            font-size: 60%;
+           }
+        }
+        @media (max-width:992px){
+           html{
+            font-size: 55%;
+           }
+        }
+@media (max-width: 768px) {
+	html{
+        font-size: 50%;
+    }
+   
+} 
+@media (max-width: 480px) {
+	html{
+        font-size: 45%;
+    }
+    .input-flex{
+        flex-direction: column;
+        align-items: center;
+    }
+    input:hover,button:hover{
+            box-shadow: 1px 1px 12px #bd2e6e;
+        }
+        input{
+            width: 200px;
+            &:focus-visible{
+                outline: 2px solid #bd2e6e;
+            }
+        }
+} 
+    </style>
+</head>
+<body>
+    <section class="sec1">
+        <div>
+            <h2>HI ABHEESHTA P HERE</h2>
+            <p>Welcome to my portpolio</p>
+        </div>
+    </section>
+    <section class="sec2">
+        <div>
+            <h2>WEB DEVELOPMENT</h2>
+            <p>I am proficient in HTML,CSS and basics of javascript</p>
+        </div>
+    </section>
+    <section class="sec3">
+        <div>
+            <h2>WEB DESIGNING</h2>
+            <p>I can design a nice looking website using figma</p>
+        </div>
+    </section>
+    <section class="sec4">
+        <div>
+            <h2>GRAPHIC DESIGNING</h2>
+            <p>I am passionate about designing posters,logos,thumbnails etc</p>
+        </div>
+    </section>
+    <section class="sec5">
+        <div>
+            <h2>TECH ENTHUSIAST</h2>
+            <p>I am a enthusiast learner. Looking forward to talk to you too! </p>
+        </div>
+    </section>
+    <section class="sec6">
+        <div>
+            <h2>CONTACT FORM</h2>
+            <div class="input-flex">
+                <input type="text" placeholder="Name" id="n" required>
+                <input type="email" placeholder="Email" id="e" required>
+            </div>
+            <div class="submit-button">
+                <button>Let's connect</button>
+            </div>
+        </div>
+    </section>
+    <!-- Abheeshta-P -->
+</body>
+</html>
